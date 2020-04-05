@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'echo "instalando dependencias"'
                 sh  'npm install'
             }
         }
