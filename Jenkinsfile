@@ -28,7 +28,7 @@ pipeline {
                 }
                 sh './jenkins/scripts/deliver-for-development.sh'
                 input 'Deploy para ambiente de desenvolvimento?'
-                sh './jenkins/script/kill.sh'
+                sh './jenkins/scripts/kill.sh'
             }
         }
         stage('Deliver for production') {
@@ -38,7 +38,7 @@ pipeline {
                 }
                 sh './jenkins/scripts/deliver-for-production.sh'
                 input 'Deploy para ambiente de producao?'
-                sh './jenkins/script/kill.sh'
+                sh './jenkins/scripts/kill.sh'
             }
         }
     }
