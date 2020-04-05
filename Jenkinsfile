@@ -15,5 +15,11 @@ pipeline {
                 sh  'npm install'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'echo "realizando testes. poderia rodar jenkins/scripts/test.sh para deixar mais limpo"'
+                sh 'npm test'
+            }
+        }
     }
 }
